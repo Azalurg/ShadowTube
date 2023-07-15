@@ -120,3 +120,11 @@ html {
 .yt-spec-touch-feedback-shape--touch-response .yt-spec-touch-feedback-shape__fill {
     background-color: #{$foreground};
 }
+
+html {
+    --yt-ysm-background: #{$background-alt};
+}
+
+.ytd-multi-page-menu-renderer{
+    background-color: #{$background-t80};
+}
