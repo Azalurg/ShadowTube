@@ -8,5 +8,8 @@
             "savePath": "/style/css",
             "savePathReplacementPairs": null
         }
+    ],
+    "cSpell.words": [
+        "searchbox"
     ]
 }

@@ -1,18 +1,18 @@
 {
     "manifest_version": 2,
-    "name": "DDGB",
-    "version": "1.0",
-    "description": "Custom background for DuckDuckGo",
+    "name": "ShadowTube",
+    "version": "1.1",
+    "description": "Embrace the darkness on YouTube! This Chrome extension magically transforms light mode into an eye-friendly, captivating dark mode experience.",
     "icons": {
-        "16": "./images/16_1_1.png",
-        "48": "./images/48_1_1.png",
-        "128": "./images/128_1_1.png"
+        "16": "./images/16.png",
+        "48": "./images/48.png",
+        "128": "./images/128.png"
     },
     "page_action": {
         "default_icon": {
-            "16": "./images/16_2_2.png",
-            "48": "./images/48_2_2.png",
-            "128": "./images/128_2_2.png"
+            "16": "./images/16.png",
+            "48": "./images/48.png",
+            "128": "./images/128.png"
         }
     },
     "content_scripts": [{
