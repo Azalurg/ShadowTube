@@ -13,8 +13,8 @@ html, [light] {
     --yt-spec-text-secondary: #{$foreground-alt};
     --yt-spec-text-disabled: #{$gray};
     --yt-spec-text-primary-inverse: #{$background};
-    --yt-spec-call-to-action: #{$blue};
-    --yt-spec-call-to-action-inverse: #{$blue};
+    --yt-spec-call-to-action: #{$green};    //blue
+    --yt-spec-call-to-action-inverse: #{$green};    //blue
     --yt-spec-suggested-action: #263850 !important;
     --yt-spec-suggested-action-inverse: #{$foreground};
     --yt-spec-icon-active-other: #{$foreground};
@@ -49,7 +49,7 @@ html, [light] {
     --yt-spec-static-overlay-text-primary: #{$foreground};
     --yt-spec-static-overlay-text-secondary: rgba(255, 255, 255, 0.7);
     --yt-spec-static-overlay-text-disabled: rgba(255, 255, 255, 0.3);
-    --yt-spec-static-overlay-call-to-action: #3ea6ff;
+    --yt-spec-static-overlay-call-to-action: #{$green}; //#3ea6ff
     --yt-spec-static-overlay-icon-active-other: #{$foreground};
     --yt-spec-static-overlay-icon-inactive: rgba(255, 255, 255, 0.7);
     --yt-spec-static-overlay-icon-disabled: rgba(255, 255, 255, 0.3);
@@ -73,7 +73,7 @@ html, [light] {
     --yt-spec-snackbar-background-updated: #f9f9f9;
     --yt-spec-badge-chip-background: rgba(255, 255, 255, 0.1) !important;
     --yt-spec-verified-badge-background: rgba(255, 255, 255, 0.25) !important;
-    --yt-spec-call-to-action-faded: rgba(62, 166, 255, 0.3) !important;
+    --yt-spec-call-to-action-faded: #{$green}; // rgba(62, 166, 255, 0.3)
     --yt-spec-call-to-action-hover: #{$cyan};
     --yt-spec-brand-button-background-hover: #990412;
     --yt-spec-brand-link-text-faded: rgba(255, 78, 69, 0.3);
@@ -93,7 +93,7 @@ html, [light] {
 html {
     // searchbox
     --ytd-searchbox-border-color: #{$magenta};
-    --ytd-searchbox-legacy-border-color: #{$background-alt};
+    --ytd-searchbox-legacy-border-color: #{$green};
     --ytd-searchbox-legacy-border-shadow-color: #{$background-alt};
     --ytd-searchbox-legacy-button-color: #{$background-alt};
     --ytd-searchbox-legacy-button-border-color: #{$background-alt};
@@ -113,7 +113,7 @@ html {
     color: #{$foreground};
 
     a{
-        color: #{$blue};
+        color: #{$green};
     }
 }
 
@@ -127,4 +127,12 @@ html {
 
 .ytd-multi-page-menu-renderer{
     background-color: #{$background-t80};
+}
+
+ytd-searchbox #container.ytd-searchbox {
+    border: 1px solid transparent;
+}
+
+ytd-searchbox[has-focus] #container.ytd-searchbox {
+    border: 1px solid #{$green};
 }
