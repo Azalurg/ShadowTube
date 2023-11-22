@@ -7,7 +7,7 @@ html, [light] {
     --yt-spec-menu-background: #{$background-t80};
     --yt-spec-inverted-background: #{$foreground};
     --yt-spec-additive-background: rgba(255, 255, 255, 0.1) !important;
-    --yt-spec-outline: rgba(255, 255, 255, 0.2) !important;
+    --yt-spec-outline: #{$background-hover};
     --yt-spec-shadow: rgba(0, 0, 0, 0.25) !important;
     --yt-spec-text-primary: #{$foreground};
     --yt-spec-text-secondary: #{$foreground-alt};
@@ -20,7 +20,7 @@ html, [light] {
     --yt-spec-icon-active-other: #{$foreground};
     --yt-spec-icon-inactive: #{$foreground-alt};
     --yt-spec-icon-disabled: #{$gray};
-    --yt-spec-button-chip-background-hover: rgba(255, 255, 255, 0.2) !important;
+    --yt-spec-button-chip-background-hover: #{$background-hover};
     --yt-spec-touch-response: #{$cyan};
     --yt-spec-touch-response-inverse: #{$background};
     --yt-spec-brand-icon-active: #{$foreground};
@@ -84,7 +84,7 @@ html, [light] {
     --yt-spec-mono-tonal-hover: rgba(255, 255, 255, 0.2);
     --yt-spec-commerce-tonal-hover: #515561;
     --yt-spec-static-overlay-filled-hover: #e6e6e6;
-    --yt-spec-static-overlay-tonal-hover: rgba(255, 255, 255, 0.2) !important;
+    --yt-spec-static-overlay-tonal-hover: #{$background-hover};
     --yt-spec-paper-tab-ink: rgba(255, 255, 255, 0.3) !important;
     --yt-spec-filled-button-text: #{$background};
     --yt-spec-selected-nav-text: #{$foreground};
@@ -135,4 +135,41 @@ ytd-searchbox #container.ytd-searchbox {
 
 ytd-searchbox[has-focus] #container.ytd-searchbox {
     border: 1px solid #{$green};
+}
+
+.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal {
+    color: #{$foreground};
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--tonal:hover{
+    background-color: #{$background-hover};
+}
+
+yt-icon, .yt-icon-container.yt-icon{
+    color: #{$foreground};
+}
+
+.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled {
+    color: #{foreground};
+    background-color: #{$red};
+    transition: 0.6s !important;
+}
+
+.yt-spec-button-shape-next--mono.yt-spec-button-shape-next--filled:hover{
+    background-color: #ff4444 !important;
+    transform: scale(1.1) !important;
+}
+
+.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--text {
+    color: #{$green};
+}
+
+.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--text:hover, .yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--outline:hover{
+    background-color: #{$background-hover};
+}
+
+.yt-spec-button-shape-next--call-to-action.yt-spec-button-shape-next--outline {
+    color: #{$green};
+    background-color: transparent !important;
 }
